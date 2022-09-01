@@ -15,5 +15,14 @@ def index():
 @app.route("/path")
 def path_logic():
     return " Path API"
+
+
+@app.route("predict",methods = ['GET,POST'])
+def predict():
+    #prediction logic
+    return "API "
+
+
+
 if __name__ == "__main__":
     app.run(debug = True)
